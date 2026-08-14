@@ -19,7 +19,9 @@
 ## B. 재질 · 텍스처 (Material & Texture) — 항상 포함
 
 ```
-Soft matte ivory-white clay with a SMOOTH, VELVETY, evenly hand-smoothed surface.
+Soft matte BRIGHT IVORY — a very light, clean, creamy off-white that sits close to
+pure white, warm but luminous, never beige, tan, or dull — with a SMOOTH, VELVETY,
+evenly hand-smoothed surface.
 The surface is soft and satin-matte, polished smooth all over by hand, with a clean
 uniform finish. Surface variation is extremely subtle — only the faintest softness in
 the larger forms — and NEVER reads as visible grain or texture detail.
@@ -78,14 +80,25 @@ Wonky forms, flawless finish.
 with simple chibi proportions. The head is large and slightly wider than the body.
 The body is short and plump with tiny stubby legs and short stubby arms.
 
-**Body:** The body is completely plain ivory-white. The arms are very short and
-rounded, naturally protruding from the sides of the body. The arms have subtle
-differences in size, angle, and shape, avoiding perfect bilateral symmetry.
+**Body:** The body is a small plump rounded form in plain bright ivory, flowing out
+of the head with almost no neck. The arms are very short, soft, rounded stubs
+emerging from the sides of the body.
 
-**Legs:** The legs are short, thick, rounded, and slightly separated, giving the
-character a stable cute standing pose. The two legs have subtle differences in width,
-curvature, or positioning, reinforcing the feeling of a handmade clay figure.
+**One continuous surface — no hard edges:** the arms, the torso, and the legs are all
+ONE single soft continuous form. Where an arm meets the torso there is only a very
+soft, shallow crease — exactly the same gentle way the two legs blend into the lower
+body. Every transition is a smooth gradual swell of the same surface, as if the whole
+figure were pinched out of one lump. There are no hard seams, no sharp outlines, no
+visible joints, and no separately-attached-looking limbs anywhere.
+
+**Legs:** The legs are short, thick, and rounded, divided only by a shallow soft
+notch at the bottom, giving the character a stable cute standing pose. The two legs
+have subtle differences in width, curvature, or positioning.
 ```
+
+> ⚠️ **팔·몸통 경계 (2026-08-14 반영):** 팔이 몸통에 따로 붙인 것처럼 뚜렷한 외곽선으로
+> 나오는 문제가 있었다. **다리처럼** 얕은 주름 하나로만 구분되게, 전체가 한 덩어리에서
+> 빚어져 나온 형태로 지시한다.
 
 > ⚠️ **비율은 텍스트만으로 잡히지 않는다.** 수치를 넣어도 모델이 몸통을 늘린다.
 > 2번째 캐릭터부터는 **앵커 캐릭터의 Element를 바인딩**해 비율을 상속시킨다.
@@ -100,12 +113,15 @@ curvature, or positioning, reinforcing the feeling of a handmade clay figure.
 expression is calm, innocent, gentle, and slightly expressionless, with a charming
 handmade imperfection.
 
-**Eyes:** Two small solid charcoal-black eyes. Each eye is a VERTICAL OVAL —
-an upright ellipse roughly 1.4 times TALLER than it is wide. It is an oval, not a
-circle: the height and the width are clearly different.
-The two eyes differ from each other slightly but visibly:
-- Size ratio between the two eyes is about **1 : 0.92** — one is a little smaller.
-- The smaller eye sits about **0.2 eye-heights higher** on the face than the other.
+**Eyes:** Two small solid charcoal-black eyes, matte and softly domed off the face
+like little pieces pressed on by hand.
+Each eye is a small VERTICAL OVAL — an upright egg shape about **1.25 times taller
+than it is wide**, slightly fuller toward the bottom. It is an oval, not a circle.
+They are SMALL against the huge head — each eye is roughly **one twelfth of the
+head's width** — and set WIDE APART, sitting a little above the middle of the face.
+The two eyes differ slightly but visibly:
+- Size ratio between them is about **1 : 0.92**.
+- The smaller eye sits about **0.2 eye-heights higher** on the face.
 - Each eye is tilted a few degrees at a DIFFERENT angle — they are not parallel.
 - The distance from each eye to the centre line of the face is slightly unequal.
 They read as two separate oval pieces placed by hand in slightly wrong spots — never
@@ -126,7 +142,7 @@ as beads, buttons, flat round dots, or perfect circles.
 
 | 역할 | 색 | 사용처 |
 |---|---|---|
-| 베이스 | 아이보리 화이트 `ivory-white` | 머리·몸통·팔·다리 (전 캐릭터 공통) |
+| 베이스 | **밝은 아이보리** `bright ivory / very light creamy off-white` — 화이트에 가깝게, 베이지·탠 금지 | 머리·몸통·팔·다리 (전 캐릭터 공통) |
 | 메인 액센트 | 차콜 그레이~거의 블랙 `dark charcoal gray to nearly black` | 눈·코·귀·꼬리 등 포인트 파츠 |
 | 서브 액센트 | 뮤트 세이지 그린 `muted sage green` | **아직 미사용** — 소품·액세서리용으로 예약 |
 

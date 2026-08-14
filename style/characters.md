@@ -27,10 +27,12 @@
 
 | 이름 | 영문명 | 종 | 상태 | Element ID | 확정 시트 |
 |------|--------|-----|------|-----------|----------|
-| 찌부 | JJIBU | 강아지 puppy | `탐색중` | — | — |
+| 찌부 | JJIBU | 강아지 puppy | **`확정`** | — | `assets/characters/jjibu/final/jjibu-front-v1-20260811.png` (스타일 원본) |
 
-> 🔖 **앵커 캐릭터 미정.** 첫 확정 캐릭터가 앵커가 되며, 이후 모든 캐릭터의 비율 기준이 된다.
-> 앵커가 정해지면 이 줄에 표시하고 `templates/character-design.md`의 '앵커 파생 규칙'을 적용한다.
+> ⚓ **앵커 캐릭터 = 찌부 (JJIBU)** (2026-08-14 확정)
+> 이후 만드는 모든 캐릭터는 찌부의 재질·비율·눈 스타일을 기준으로 삼는다.
+> 2번째 캐릭터부터는 `jjibu-front-v1-20260811.png`를 레퍼런스로 넣고
+> 귀·머리 실루엣·종 고유 파츠만 교체한다 (`templates/character-design.md` 4번 '앵커 파생 규칙').
 
 ---
 
@@ -38,40 +40,48 @@
 
 `templates/character-design.md`의 슬롯에 그대로 넣는 값이다. **즉석에서 다시 쓰지 말고 복사한다.**
 
-### 찌부 (JJIBU) — 강아지 · `탐색중`
+### 찌부 (JJIBU) — 강아지 · **`확정`** · ⚓ 앵커
 
 - **1차 생성일:** 2026-08-14
 - **비율/배경:** 배경 A (딥 블랙 + 화이트 글로우)
-- **미확정 항목:** 최종 귀 각도, Element 등록 여부
+- **형태 기준 이미지:** `assets/characters/jjibu/final/jjibu-front-v1-20260811.png`
+  → 귀·눈·코·꼬리 서술은 **이 이미지를 실측해서 작성**했다. 형태를 고칠 땐 이 이미지를 먼저 볼 것.
+  → 이 프로젝트 전체의 **스타일 원본**이기도 하다. 삭제·리사이즈 금지.
+- **미확정 항목:** Element 등록 여부
 
 프롬프트의 `{NAME}` 슬롯에는 `JJIBU`를 넣는다.
 
 ```
 **Head**
-The head is large and slightly wider than the body. Seen from the front, the outline
-of the head is an OVAL — a wide egg shape resting with its broad end down, about
-1.05 times wider than it is tall. The entire outline is one single continuous curve,
-exactly like an egg or a balloon: every point along the edge is curving. The sides
-bulge outward into full round cheeks and the bottom is a wide arc.
-If you traced the head with one stroke it would be an ellipse, NOT a square with
-rounded corners.
+The head is large and slightly wider than the body, with a soft rounded-trapezoid shape.
 
 **Nose**
-The nose is one small rounded black oval clay piece, slightly off-centre and
-intentionally crooked. The nose is slightly tilted, and subtly uneven in shape.
+The nose is one soft charcoal-black rounded piece at the centre of the face, sitting
+below and between the eyes. It is a HORIZONTAL oval — about 1.4 times WIDER than it
+is tall — like a small soft bean, with a full slightly heavier lower edge and
+completely rounded ends. It is clearly BIGGER than an eye, roughly TWICE an eye's
+size, and it is the largest feature on the face. It is softly domed off the surface
+rather than flat, sits a touch off-centre, and is tilted very slightly.
 
 **Ears**
-The puppy has two long, floppy, rounded ears attached to the upper sides of the head,
-drooping outward and downward. They are dark charcoal gray to nearly black.
-The two ears are ALMOST THE SAME SIZE — the size ratio between them is about
-**1 : 0.95**, a barely noticeable difference. They must clearly read as a matching
-pair. Only their curve and hanging angle differ a little, giving a gentle handmade
-feel — never a big or obvious size difference between the two ears.
+Two long, floppy, soft ears hang from the upper sides of the head in dark charcoal
+gray, almost black. Each ear is a flat soft lobe: narrow and slightly pinched where
+it attaches high on the side of the head, then swelling downward into a full rounded
+tip, with a gentle S-curve along its length like a soft bean. The tips are completely
+round, with no points anywhere.
+The two ears are a MISMATCHED PAIR with a size ratio of about **1 : 0.8**:
+- The ear on the VIEWER'S LEFT is the LONGER, slimmer one. It hangs almost straight
+  down past the cheek, reaching below eye level.
+- The ear on the VIEWER'S RIGHT is noticeably SHORTER, fatter, and rounder. It swings
+  outward at a wider angle and has a soft waist near its middle.
+Both lie flat against the sides of the head and slightly behind it.
 
 **Tail**
-A small dark charcoal-gray rounded tail is visible behind the character on the lower
-right side of the body. The tail should also have a slightly irregular handmade shape
-rather than a mathematically perfect sphere or capsule.
+A small charcoal-gray tail sits low on the VIEWER'S RIGHT side of the body, at about
+hip height. It is a short, thick, rounded stub — a soft teardrop, wide where it meets
+the body and tapering to a fully rounded tip — curving gently upward and outward. It
+is small, roughly a QUARTER of the body's width, and only partly visible from the
+front as it peeks out from behind the body.
 
 **Body**
 The body wears NO clothing and NO accessories of any kind — completely plain and bare.
@@ -115,6 +125,26 @@ The body wears NO clothing and NO accessories of any kind — completely plain a
     반영됐다. → **1 : 0.95**로 못박고 "한 쌍으로 읽혀야 한다"를 명시.
   - 교훈: 비대칭 지시는 **방향(크다/작다)이 아니라 비율**로 준다. 방향만 주면
     무시되거나 과잉되거나 둘 중 하나다.
+
+- **4차 준비 — 레퍼런스 실측 기반 재작성 (2026-08-14)**
+  - 귀 비율을 `1 : 0.95` → **`1 : 0.8`**로 변경 (사용자 지정).
+  - 귀·눈·코·꼬리를 형태 기준 이미지에서 **직접 실측**해 다시 썼다. 주요 확정 수치:
+    - 눈: 세로 타원 **1.25배**, 머리 폭의 **1/12** 크기, 넓게 벌어짐
+    - 코: **가로** 타원 1.4배, 눈의 **약 2배** 크기 — 얼굴에서 가장 큰 요소
+    - 귀: 왼쪽=길고 슬림 / 오른쪽=짧고 통통 + 중간에 잘록한 허리
+    - 꼬리: 몸통 폭의 1/4, 물방울 모양, 오른쪽 엉덩이 높이
+  - 팔·몸통 경계가 뚜렷한 문제 → `art-direction.md` D 블록에 '한 덩어리' 규칙 추가 (공통).
+  - 베이스 색을 **밝은 아이보리**로 조정 → `art-direction.md` B·F (공통).
+  - 교훈: **형태는 말로 짓지 말고 레퍼런스에서 실측한다.** 2·3차의 얼굴 형태 헤맴은
+    이미지를 보지 않고 형용사를 바꿔가며 추측한 탓이 컸다.
+
+- **얼굴 형태 — 1차 원문으로 원복 (2026-08-14, 사용자 결정)**
+  - 2차 `ROUNDED DOME`, 3차 `OVAL / 가로 1.05배 타원`으로 두 번 고쳤으나 **1차 원문
+    `soft rounded-trapezoid shape`으로 되돌렸다.**
+  - 레퍼런스 이미지를 만든 문구가 1차 원문이므로, 이것이 목표 형태의 정답이다.
+    각진 결과는 이 문구 탓이 아니라 다른 원인(GPT의 해석·프롬프트 길이 등)으로 본다.
+  - ⚠️ **이 블록을 다시 손대지 말 것.** 얼굴이 각지게 나오면 Head 문구를 바꾸는 대신
+    Negative(`boxy head, square head` 등) 또는 도구·프롬프트 길이 쪽을 먼저 의심한다.
 
 ---
 

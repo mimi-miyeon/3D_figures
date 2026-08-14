@@ -13,6 +13,9 @@ assets/
     {영문명 소문자}/
       final/        # 확정 컷 — 레퍼런스·Element 등록에 쓰는 것만
       candidates/   # 후보·미채택 컷
+  icons/
+    final/          # 확정 아이콘 — 앵커 아이콘 포함
+    candidates/     # 후보·미채택
 ```
 
 - `final/`에는 **확정된 것만** 넣는다. 여기 있는 이미지는 그대로 레퍼런스로 사용된다.
