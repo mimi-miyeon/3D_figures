@@ -48,7 +48,11 @@
 
 ```
 **Head**
-The head is large and slightly wider than the body, with a soft rounded-trapezoid shape.
+The head is large and slightly wider than the body, shaped as a soft plump ROUNDED
+DOME: gently curved and narrower across the top, widening smoothly outward into full
+soft cheeks, ending in a broad softly rounded bottom. Every edge is one continuous
+curve. There are NO flat side walls, NO corners, NO straight jawline, and it must
+NOT read as a rounded cube, a rounded square, or a boxy shape.
 
 **Nose**
 The nose is one small rounded black oval clay piece, slightly off-centre and
@@ -76,8 +80,24 @@ The body wears NO clothing and NO accessories of any kind — completely plain a
 - 주둥이(머즐)가 튀어나오면 안 됨 — 얼굴은 평평한 면. Negative: `snout, muzzle, protruding nose bridge`
 - 귀는 반드시 아래로 처짐. 서 있는 귀 금지. Negative: `pointed ears, upright ears, standing ears`
 - 몸통에 무늬·반점 금지 — 아이보리 단색. Negative: `spots, patches, fur markings, two-tone body`
+- **머리가 각지면 안 됨** — 둥근 돔. 고질적 문제이므로 Head 블록 + Negative 이중 기재.
+  Negative: `boxy head, square head, rounded-cube head, flat-sided head, angular jaw`
 
-**Negative 추가:** `realistic dog, dog breed features, snout, muzzle`
+**Negative 추가:** `realistic dog, dog breed features, snout, muzzle, boxy head, square head, flat-sided head`
+
+**시행착오:**
+
+| 차수 | 도구 | 결과 | 원인 → 조치 |
+|---|---|---|---|
+| 1차 | (레퍼런스) | 기준 컷 | 스타일 원본 |
+| 2차 | GPT | ❌ 4개 항목 어긋남 | 아래 참조 |
+
+- **2차 (2026-08-14, GPT) 실패 4건**
+  1. 질감이 건조·거침 → `art-direction.md` B 블록 전면 수정 (그레인 어휘 제거 + RENDER INTENT 추가)
+  2. 눈이 정원·대칭 → `art-direction.md` E 블록 수정 (vertical oval 명시 + 좌/우 개별 지정)
+  3. 실사 점토 사진처럼 나옴 → 1번과 동일 원인. Negative의 `perfectly smooth clay texture` 제거
+  4. 얼굴이 각짐 (`rounded-trapezoid`를 둥근 정사각형으로 해석) → 위 Head 블록을 ROUNDED DOME으로 교체
+- 1·2·3번은 **모든 캐릭터 공통 문제**라 `art-direction.md`에 반영했고, 4번만 찌부 개별 문제라 여기에 넣었다.
 
 ---
 

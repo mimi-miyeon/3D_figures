@@ -19,23 +19,32 @@
 ## B. 재질 · 텍스처 (Material & Texture) — 항상 포함
 
 ```
-Soft matte ivory-white clay with a fine, natural handcrafted clay grain.
-The surface is softly hand-smoothed, velvety, slightly powdery, and gently porous,
-with very fine microscopic pores and subtle organic surface variations. Include tiny
-uneven areas, faint grain, soft dents, barely visible fingerprints, and slight
-variations in smoothness caused by being shaped and smoothed by hand.
-The texture should be delicate and refined rather than rough or gritty. It should
-remain mostly smooth and soft, with the handmade texture becoming visible mainly in
-the subtle variations across the surface.
-The material has very low reflectivity and soft diffuse light response. Highlights
-are broad, soft, and subdued.
+Soft matte ivory-white clay with a SMOOTH, VELVETY, evenly hand-smoothed surface.
+The surface is soft and satin-matte, polished smooth all over by hand, with a clean
+uniform finish. Surface variation is extremely subtle — only the faintest softness in
+the larger forms — and NEVER reads as visible grain or texture detail.
+The clay is smooth and slightly waxy: NOT dry, NOT powdery, NOT chalky, NOT porous.
+There are no visible pores, no speckles, no cracks, no crumbs, no sand-like grain,
+no fingerprints, and no rough patches anywhere.
+The material has low reflectivity with a soft diffuse light response. Highlights are
+broad, soft, and subdued — a gentle satin sheen, not a hard specular glint.
 EVERY clay component — the ivory base, the charcoal-gray parts, and any accent-colour
-piece — shares the exact same tactile handmade clay texture.
-The material must feel like real handcrafted modelling clay or fine sculpting clay,
-not digitally generated plastic.
-No glossy coating, no polished ceramic, no rubber, no plastic, no metallic reflection,
-no glass, no excessive roughness, no sand-like grain, no cracks, no dust.
+piece — shares the exact same smooth velvety clay surface.
+
+RENDER INTENT: This is a CLEAN, STYLIZED 3D CHARACTER RENDER of an idealized soft clay
+toy — NOT a photograph of a real clay sculpture. The surface stays idealized and
+digitally clean while the FORMS stay soft and handmade. Do not add photographic
+material realism, scanned clay detail, or documentary surface texture.
+No glossy coating, no polished ceramic, no rubber, no hard plastic, no metallic
+reflection, no glass.
 ```
+
+> ⚠️ **실측 (2026-08-14, 찌부 2차):** 이전 버전은 `powdery / porous / microscopic pores /
+> faint grain / fingerprints` + `must feel like real handcrafted modelling clay`
+> 조합이었고, 그 결과 **바짝 마른 실사 점토 사진**이 나왔다. Negative에 있던
+> `perfectly smooth clay texture`가 매끄러운 표면을 오히려 차단하고 있었다.
+> → 그레인 계열 어휘를 전부 제거하고, "실제 점토"가 아니라 **"양식화된 3D 렌더"**임을
+> 명시(RENDER INTENT)하는 방향으로 뒤집었다.
 
 ---
 
@@ -44,10 +53,19 @@ no glass, no excessive roughness, no sand-like grain, no cracks, no dust.
 이 블록이 이 프로젝트를 다른 3D 캐릭터와 구분 짓는 핵심이다. **절대 빼지 않는다.**
 
 ```
-The character should look like a person made the face by hand, placing each tiny clay
-feature individually, so the eyes and nose are slightly misplaced, uneven, crooked,
-and imperfect. This handmade imperfection is a key part of the character design.
+The character should look like a person shaped it by hand, placing each tiny clay
+feature individually, so the eyes, nose, and ears are visibly misplaced, uneven,
+crooked, and asymmetrical. This handmade imperfection is a key part of the design.
+
+CRITICAL — WHERE the imperfection lives: the imperfection is ONLY in the SHAPE,
+SIZE, ANGLE, and PLACEMENT of the individual parts. It is NEVER in the surface
+quality. The surface itself stays perfectly smooth, clean, and velvety everywhere.
+Wonky forms, flawless finish.
 ```
+
+> ⚠️ **이 구분이 이 프로젝트에서 가장 중요한 문장이다.**
+> "손으로 만든 느낌"을 표면 질감으로 해석하면 마른 실사 점토가 나온다 (2026-08-14 실측).
+> 손맛은 **형태의 어긋남**으로만 표현하고, **표면은 완벽하게 매끄럽게** 유지한다.
 
 ---
 
@@ -80,12 +98,18 @@ curvature, or positioning, reinforcing the feeling of a handmade clay figure.
 expression is calm, innocent, gentle, and slightly expressionless, with a charming
 handmade imperfection.
 
-**Eyes:** Two small solid charcoal-black rounded clay eyes. One eye is slightly
-larger or smaller than the other, with subtle differences in shape, angle, and
-position. Each eye is slightly tilted and sits at a different angle. Their vertical
-positions differ slightly, and the distance between each eye and the centre of the
-face is not perfectly equal. They MUST NOT look like smooth plastic beads, flat clay,
-polished buttons, or perfectly computer-generated geometric shapes.
+**Eyes:** Two small solid charcoal-black clay eyes, each shaped as a soft VERTICAL
+OVAL — clearly TALLER than it is wide, a rounded ellipse, NEVER a perfect circle
+and never a round dot.
+The two eyes are CLEARLY and VISIBLY different from each other — an obvious
+difference at a glance, not a subtle one:
+- The eye on the VIEWER'S LEFT is noticeably LARGER than the other one.
+- The eye on the VIEWER'S RIGHT sits HIGHER on the face, by about half an eye-height.
+- Each eye is tilted at a DIFFERENT angle — they are not parallel to each other.
+- The distance from each eye to the centre line of the face is unequal.
+They look like two separate pieces of clay pressed on by hand in slightly wrong
+places. They MUST NOT look like smooth plastic beads, polished buttons, flat round
+dots, or perfectly computer-generated circles.
 ```
 
 - **입·눈썹·속눈썹은 어떤 캐릭터에도 넣지 않는다.** 이 캐릭터군의 고정 규칙이다.
@@ -159,13 +183,17 @@ isolated with only a soft contact shadow beneath the feet.
 ## I. 스타일 키워드 (프롬프트 말미에 항상 포함)
 
 ```
-minimalist 3D character, cute collectible toy, soft clay sculpture, Japanese character
-aesthetic, chibi proportions, rounded forms, matte clay, soft studio lighting, premium
-product render, simple silhouette, handmade clay figure, natural fingerprints on the
-clay texture, handcrafted imperfection, intentional asymmetry, wonky facial features,
-uneven eyes, crooked nose, irregular clay pieces, organic shapes, imperfect handmade
-sculpture, charmingly imperfect, tactile clay texture.
+minimalist 3D character, cute collectible toy, stylized clay-toy render, Japanese
+character aesthetic, chibi proportions, soft rounded forms, smooth matte clay,
+velvety satin-matte surface, clean idealized surface, soft studio lighting, premium
+product render, simple silhouette, handcrafted imperfection, intentional asymmetry,
+wonky facial features, uneven oval eyes, crooked nose, irregular clay pieces, organic
+shapes, charmingly imperfect forms, flawlessly smooth finish.
 ```
+
+> `natural fingerprints on the clay texture` / `tactile clay texture` / `soft clay sculpture`를
+> 제거했다 (2026-08-14) — 전부 표면 그레인을 유발했다.
+> 손맛 키워드는 **형태 계열만** 남긴다 (`wonky`, `uneven`, `crooked`, `irregular`).
 
 ---
 
@@ -178,13 +206,28 @@ clothing, accessories, collar, complex patterns, excessive facial details, human
 features, aggressive expression, dramatic pose, complex background, scenery, props,
 text, letters, logo, watermark, outline, glossy plastic, metallic material, glass,
 excessive reflections, perfectly rounded outline, perfect handmade sculpture, regular
-clay pieces, perfectly smooth clay texture, perfect facial symmetry, perfectly
-identical eyes, perfectly aligned eyes, perfectly centred nose, perfectly geometric
-eyes, perfectly smooth facial features, polished black beads, plastic eyes, glossy
-buttons, manufactured-looking facial pieces, computer-perfect geometry, sterile
-perfection, mirrored features, symmetrical ears, symmetrical arms, symmetrical legs,
-flawless surfaces.
+clay pieces, perfect facial symmetry, perfectly identical eyes, perfectly aligned
+eyes, perfectly centred nose, perfectly geometric eyes, polished black beads, plastic
+eyes, glossy buttons, manufactured-looking facial pieces, computer-perfect geometry,
+sterile perfection, mirrored features, symmetrical ears, symmetrical arms,
+symmetrical legs,
+
+dry clay, cracked clay, chalky surface, powdery surface, porous surface, visible clay
+pores, speckled texture, coarse grain, sandy texture, gritty surface, rough surface,
+crumbly clay, unfinished clay, visible fingerprints, photorealistic clay photograph,
+photograph of a real clay sculpture, scanned clay, documentary material realism,
+hyperreal material detail,
+
+round eyes, circular eyes, perfectly round dot eyes, bead eyes, identical eyes,
+evenly placed eyes, level eyes, parallel eyes, symmetrical eye placement,
+
+boxy head, square head, rounded-cube head, rounded-square head, flat-sided head,
+angular jaw, straight jawline, corners on the head.
 ```
+
+> ⚠️ Negative에서 **`perfectly smooth clay texture`를 제거했다** (2026-08-14).
+> 이 항목이 매끄러운 표면을 차단해 마른 점토를 유발했다. 다시 넣지 말 것.
+> 마찬가지로 `flawless surfaces`도 제거했다 — 표면은 flawless여야 한다.
 
 캐릭터별 추가 Negative는 `style/characters.md`의 각 캐릭터 항목에 쌓는다.
 
