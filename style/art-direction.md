@@ -179,9 +179,23 @@ Octane Render aesthetic, physically based rendering, smooth clay material, soft
 global illumination, high-quality 3D collectible figure.
 ```
 
-배경은 **용도에 따라 둘 중 하나를 골라 명시**한다.
+배경은 **용도에 따라 골라 명시**한다. 기본값은 **배경 C(밝은 배경)**다.
 
-**배경 A — 쇼케이스용 (1차 결과물이 이것)**
+**배경 C — 밝은 배경 ★ 기본값 (2026-08-14 지정)**
+```
+Soft bright background in a pale warm gray with a very subtle radial gradient —
+a shade DEEPER than the ivory figure so the ivory silhouette stays cleanly separated
+from it, never blending into the background. A soft diffused drop shadow beneath the
+object grounds it. No environment, no props, no text, no logo, no outline.
+```
+
+> ⚠️ **밝은 배경의 함정 — 아이보리가 배경에 묻힌다.**
+> 이 프로젝트의 베이스 색이 '화이트에 가까운 밝은 아이보리'라, 배경을 흰색으로 잡으면
+> 실루엣이 사라진다. 밝은 배경을 쓸 때는 반드시 **배경을 오브젝트보다 한 톤 어둡게**
+> 지정하고 **드롭 섀도우로 분리**한다. 위 블록에 두 장치가 모두 들어 있다.
+> 변형: `pale warm gray` 대신 `pale sage-tinted gray`를 쓰면 액센트 색과 묶인다.
+
+**배경 A — 딥 블랙 쇼케이스용 (찌부 확정 컷이 이것)**
 ```
 Deep black background with a soft white ambient glow radiating behind the character
 and a gentle contact shadow beneath the feet. No environment, no props, no text,
@@ -197,7 +211,15 @@ isolated with only a soft contact shadow beneath the feet.
 
 > ⚠️ **1차 프롬프트의 `Clean isolated background`는 배경 A(검정+글로우)로 나왔다.**
 > "isolated"만으로는 배경색이 통제되지 않는다. 원하는 쪽을 위 블록 그대로 명시할 것.
-> Element 등록 레퍼런스는 배경 A의 글로우가 실루엣에 섞이므로 **배경 B를 쓴다.**
+> Element 등록·시트 레퍼런스는 배경 A의 글로우가 실루엣에 섞이므로 **배경 B를 쓴다.**
+
+**배경 선택표**
+
+| 상황 | 배경 |
+|---|---|
+| 기본 (아이콘·캐릭터 일반) | **C — 밝은 배경** |
+| 다크 쇼케이스, 찌부 원본 계열 | A — 딥 블랙 + 글로우 |
+| 턴어라운드·표정 시트, 레퍼런스 등록 | B — 플랫 오프화이트 |
 
 ---
 

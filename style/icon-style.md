@@ -18,7 +18,7 @@
 | B. 재질·텍스처 | 매끄러운 벨벳 매트 표면, 소프트터치 매트 비닐 앵커, RENDER INTENT |
 | F. 팔레트 | 밝은 아이보리 베이스 + 차콜 액센트 |
 | H. 조명 | 소프트 스튜디오 라이팅, 접지 그림자 |
-| H. 배경 | 배경 A(딥 블랙 + 글로우) 기본 |
+| H. 배경 | **배경 C(밝은 배경) 기본** — 아이보리가 묻히지 않게 배경을 한 톤 어둡게 + 드롭 섀도우 |
 
 ---
 
@@ -38,6 +38,25 @@ volume you could pick up and hold.
 - 선으로 그리는 아이콘(라인 아이콘)은 이 스타일에서 성립하지 않는다. 점토로 빚을 수 없는 형태이기 때문이다.
 - 얇은 요소가 필요하면 **두툼한 막대**로 바꾼다. 최소 두께는 **아이콘 전체 폭의 1/10** 이상.
 - 뾰족한 끝·날카로운 모서리 금지. 모든 끝은 둥글게 마감한다.
+
+### 1-1. 선/채움 2상태 만들기 (탭바 등)
+
+라인 아이콘이 성립하지 않으므로, 선/채움 상태를 **덩어리 두 종류**로 번역한다.
+
+| 상태 | 형태 | 색 |
+|---|---|---|
+| **비활성 (선)** | 속이 빈 **두툼한 튜브** — 도넛처럼 가운데가 뚫린 덩어리 | 전체 밝은 아이보리 |
+| **활성 (채움)** | 속이 꽉 찬 **솔리드 덩어리** | 아이보리 + 차콜/세이지 액센트 |
+
+```
+INACTIVE: a thick hollow outline form — a chunky ring-like {OBJECT} shape, open
+through the middle, all bright ivory.
+ACTIVE: the same {OBJECT}, solid and filled, with {액센트 파츠} in {색}.
+```
+
+- 두 상태의 **외곽 실루엣은 완전히 같아야 한다.** 속만 다르다.
+- 튜브 벽 두께도 최소 두께 규칙(전체 폭의 1/10)을 따른다.
+- 2상태는 **반드시 같은 프롬프트·같은 레퍼런스로 연속 생성**한다. 따로 뽑으면 실루엣이 어긋난다.
 
 ### 2. 비대칭은 캐릭터보다 약하게
 
@@ -86,7 +105,9 @@ in muted sage green — a soft desaturated grey-green.
 
 ```
 Single object centered in a square frame, slight 3D tilt, generous empty space around
-it, soft studio lighting from the upper left, gentle contact shadow.
+it, soft studio lighting from the upper left, gentle soft drop shadow beneath it on a
+soft bright pale warm gray background with a subtle radial gradient — the background
+sits a shade deeper than the ivory body so the silhouette stays clearly separated.
 ```
 
 - 비율 **1:1** 고정

@@ -34,9 +34,13 @@ stays perfectly smooth. The silhouette stays simple and instantly readable.
 
 Single object centered in a square frame, filling about 65% of it, slight 3D tilt
 rotated about 15 degrees, generous empty space around it, soft studio lighting from
-the upper left, gentle contact shadow, clean stylized 3D render on a deep black
-background with a soft glow.
+the upper left, gentle soft drop shadow beneath it, clean stylized 3D render on a
+soft bright pale warm gray background with a subtle radial gradient — the background
+sits a shade deeper than the ivory body so the silhouette stays clearly separated.
 ```
+
+> **배경은 오브젝트보다 한 톤 어둡게.** 순백 배경을 쓰면 밝은 아이보리 본체가 묻힌다.
+> 다크 버전이 필요하면 `style/art-direction.md`의 배경 A 블록으로 교체한다.
 
 > **서술 순서를 바꾸지 말 것.** 형태 → 표면 → 색 → 느낌 → 구도.
 > 배경·구도를 앞으로 올리면 형태 묘사가 밀려 실루엣이 뭉개진다.
