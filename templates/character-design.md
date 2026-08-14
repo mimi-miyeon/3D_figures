@@ -123,7 +123,61 @@ rather than a mathematically perfect sphere or capsule.
 
 ---
 
-## 3. 앵커 파생 규칙 (★ 2번째 캐릭터부터)
+## 3. 도구별 프롬프트 운용 (★ 중요)
+
+**1번 골격은 Higgsfield / Stable Diffusion 계열용이다. GPT에는 그대로 쓰면 안 된다.**
+
+| | Higgsfield / SD | GPT (ChatGPT 이미지) |
+|---|---|---|
+| Negative Prompt | ✅ 필수 | 🚫 **쓰지 않는다** |
+| 프롬프트 길이 | 길어도 됨 | **250 단어 이하** |
+| 서술 방식 | 금지어 나열 가능 | **긍정문으로만** |
+| 캐릭터 일관성 | Element 바인딩 | 확정 컷을 레퍼런스 이미지로 첨부 |
+
+### GPT에서 지키는 3원칙
+
+1. **Negative를 넣지 않는다.** GPT는 Negative를 지원하지 않고, 금지어를 나열하면 오히려
+   그 단어를 끌어다 쓴다. `dry clay, cracked, porous`를 적을수록 건조한 질감이 강해졌다 (3차 실측).
+   → 금지하고 싶은 것은 **원하는 상태를 긍정문으로** 쓴다.
+   `no dry texture` ❌ → `one smooth, clean, velvety surface` ✅
+2. **부사 대신 숫자.** `slightly`, `noticeably`, `subtle`은 무시되고 기본값(완벽한 대칭)이 된다.
+   `1 : 0.95`, `1.4배 세로로 긴`, `0.2 eye-heights 위` 처럼 **비율·배수로** 쓴다.
+3. **중요한 것을 맨 위로.** 뒤로 갈수록 반영률이 떨어진다. 계속 틀리는 항목을
+   프롬프트 상단으로 올린다.
+
+### GPT용 단축 골격
+
+```
+A cute minimalist 3D character render of a small {SPECIES} toy figure named {NAME}.
+
+HEAD SHAPE: {HEAD_SHAPE — 실루엣을 도형 하나로 단정}
+
+EYES: two small charcoal-black VERTICAL OVALS, each about 1.4 times taller than
+wide. Size ratio between them about 1 : 0.92, one sitting a fraction higher, each
+tilted at a slightly different angle.
+
+NOSE: {NOSE}
+
+EARS: {EARS — 비율 수치 포함}
+
+SURFACE: the whole figure is one smooth, clean, velvety matte {BASE_COLOUR} surface,
+like a soft-touch matte vinyl designer toy — even and flawless everywhere, softly lit.
+
+BODY: {BODY} {ACCESSORY}
+
+The charm comes from the shapes being placed a little unevenly by hand, while the
+surface itself stays perfectly smooth.
+
+Front view, standing, centered, full body, soft studio lighting, gentle contact
+shadow, clean stylized 3D render, {BACKGROUND}.
+```
+
+> `clay`라는 단어를 최소로 쓴다. GPT에서 `clay`는 **마른 흙 질감**을 강하게 끌어온다.
+> 실루엣은 점토 인형이되 표면은 `matte vinyl`로 지시하는 편이 레퍼런스에 가깝다.
+
+---
+
+## 4. 앵커 파생 규칙 (★ 2번째 캐릭터부터)
 
 **1번 캐릭터(앵커)가 나머지 전부의 기준자가 된다.**
 
@@ -146,7 +200,7 @@ rather than a mathematically perfect sphere or capsule.
 
 ---
 
-## 4. 확정 전 검증 시트
+## 5. 확정 전 검증 시트
 
 전신 정면 컷이 마음에 들어도 **바로 확정하지 말고** 아래 둘을 뽑아 본다. 여기서 무너지면 장면에서도 무너진다.
 
@@ -170,10 +224,12 @@ Still NO mouth, NO eyebrows, NO eyelashes in any cell.
 
 ---
 
-## 5. 작성 요령 (실측·주의)
+## 6. 작성 요령 (실측·주의)
 
 - **비대칭과 재현성은 서로 충돌한다.** '의도적 비대칭'이 이 캐릭터군의 시그니처인데, 같은 캐릭터를 다시 뽑을 때 **그 비대칭 패턴까지 같아야** 동일 캐릭터로 읽힌다. 텍스트로는 절대 안 잡힌다. → **확정 시트 이미지 + Element 바인딩**이 유일한 방법이다. 확정 컷은 반드시 원본 해상도로 보관할 것.
-- **비대칭 지시가 과하면 기형이 된다.** 눈·귀·팔·다리에 전부 비대칭을 걸면 얼굴이 무너진 결과가 나온다. 그럴 땐 **눈·코·귀만 비대칭으로 두고 팔다리는 대칭 허용**으로 완화한다.
+- **비대칭은 방향이 아니라 비율로 지시한다.** "한쪽이 더 크다"만 쓰면 무시되거나 과잉되거나 둘 중 하나다. 실측에서 `noticeably asymmetrical`이 2차엔 무시됐다가 3차엔 귀 크기가 반토막 나는 과잉으로 나왔다. → **`1 : 0.95`처럼 숫자로** 쓰고, 한 쌍으로 읽혀야 하면 `must clearly read as a matching pair`를 덧붙인다.
+- **비대칭 지시가 과하면 기형이 된다.** 눈·귀·팔·다리에 전부 비대칭을 걸면 얼굴이 무너진 결과가 나온다. 그럴 땐 **눈·코만 비대칭으로 두고 귀·팔다리는 거의 대칭(1:0.95~1)**으로 완화한다.
+- **형태는 도형 하나로 단정한다.** `rounded-trapezoid`, `rounded dome` 같은 형용은 모델이 둥근 사각형으로 해석했다 (2·3차 연속). → **"한 획으로 그리면 타원"**처럼 도형을 못박는 서술이 효과적이다.
 - 문제됐던 요소는 **3중 방어**: 해당 부위 블록 안에 강조 + `**Important**` 블록 + Negative 중복 기재.
 - 재질이 플라스틱처럼 나오면 원인은 대개 **배경 A의 글로우**다. 배경 B로 바꾸면 점토 질감이 살아난다.
 - 요구 조건이 4개 이상이면 **하나를 잡는 순간 다른 하나가 풀리는 시소 현상**이 난다. 3회 안에 안 잡히면 가장 근접한 결과를 보여주고 남은 항목을 물어보는 편이 낫다.

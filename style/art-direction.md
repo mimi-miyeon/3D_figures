@@ -26,10 +26,12 @@ the larger forms — and NEVER reads as visible grain or texture detail.
 The clay is smooth and slightly waxy: NOT dry, NOT powdery, NOT chalky, NOT porous.
 There are no visible pores, no speckles, no cracks, no crumbs, no sand-like grain,
 no fingerprints, and no rough patches anywhere.
+SURFACE ANCHOR: the finish is that of a SOFT-TOUCH MATTE VINYL DESIGNER TOY — an
+even, flawless, factory-clean matte skin. Think smooth painted vinyl, not raw clay.
 The material has low reflectivity with a soft diffuse light response. Highlights are
 broad, soft, and subdued — a gentle satin sheen, not a hard specular glint.
-EVERY clay component — the ivory base, the charcoal-gray parts, and any accent-colour
-piece — shares the exact same smooth velvety clay surface.
+EVERY component — the ivory base, the charcoal-gray parts, and any accent-colour
+piece — shares the exact same smooth velvety surface.
 
 RENDER INTENT: This is a CLEAN, STYLIZED 3D CHARACTER RENDER of an idealized soft clay
 toy — NOT a photograph of a real clay sculpture. The surface stays idealized and
@@ -98,19 +100,22 @@ curvature, or positioning, reinforcing the feeling of a handmade clay figure.
 expression is calm, innocent, gentle, and slightly expressionless, with a charming
 handmade imperfection.
 
-**Eyes:** Two small solid charcoal-black clay eyes, each shaped as a soft VERTICAL
-OVAL — clearly TALLER than it is wide, a rounded ellipse, NEVER a perfect circle
-and never a round dot.
-The two eyes are CLEARLY and VISIBLY different from each other — an obvious
-difference at a glance, not a subtle one:
-- The eye on the VIEWER'S LEFT is noticeably LARGER than the other one.
-- The eye on the VIEWER'S RIGHT sits HIGHER on the face, by about half an eye-height.
-- Each eye is tilted at a DIFFERENT angle — they are not parallel to each other.
-- The distance from each eye to the centre line of the face is unequal.
-They look like two separate pieces of clay pressed on by hand in slightly wrong
-places. They MUST NOT look like smooth plastic beads, polished buttons, flat round
-dots, or perfectly computer-generated circles.
+**Eyes:** Two small solid charcoal-black eyes. Each eye is a VERTICAL OVAL —
+an upright ellipse roughly 1.4 times TALLER than it is wide. It is an oval, not a
+circle: the height and the width are clearly different.
+The two eyes differ from each other slightly but visibly:
+- Size ratio between the two eyes is about **1 : 0.92** — one is a little smaller.
+- The smaller eye sits about **0.2 eye-heights higher** on the face than the other.
+- Each eye is tilted a few degrees at a DIFFERENT angle — they are not parallel.
+- The distance from each eye to the centre line of the face is slightly unequal.
+They read as two separate oval pieces placed by hand in slightly wrong spots — never
+as beads, buttons, flat round dots, or perfect circles.
 ```
+
+> **수치로 쓴다.** `slightly`, `subtle`, `noticeably` 같은 부사는 모델이 무시하고
+> 기본값(= 완벽한 대칭 정원)으로 처리한다 (2026-08-14, 2·3차 연속 실측).
+> 비율·배수·각도를 **숫자로** 지정해야 반영된다.
+> 위 `1.4배` / `1 : 0.92` / `0.2 eye-heights`는 조정 가능한 값이다. 결과를 보고 튜닝할 것.
 
 - **입·눈썹·속눈썹은 어떤 캐릭터에도 넣지 않는다.** 이 캐릭터군의 고정 규칙이다.
 - 코는 종에 따라 형태가 달라지므로 `templates/character-design.md`의 `{NOSE}` 슬롯에서 정의한다.
@@ -197,7 +202,14 @@ shapes, charmingly imperfect forms, flawlessly smooth finish.
 
 ---
 
-## J. 공통 Negative (항상 포함)
+## J. 공통 Negative
+
+> 🚫 **GPT(ChatGPT 이미지 생성)에서는 이 블록을 쓰지 않는다.**
+> GPT는 Negative Prompt를 지원하지 않는다. 금지어를 나열하면 오히려 그 단어를
+> 끌어다 쓴다 — `dry clay, cracked, porous`를 적을수록 건조한 질감이 강해진다 (3차 실측).
+> GPT용 운용법은 `templates/character-design.md`의 '도구별 프롬프트 운용' 참조.
+>
+> ✅ 아래 블록은 **Higgsfield / Stable Diffusion 계열** 전용이다.
 
 ```
 realistic animal, photorealistic animal, detailed fur, hairy texture, fluffy fur,

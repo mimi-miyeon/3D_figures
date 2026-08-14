@@ -48,22 +48,25 @@
 
 ```
 **Head**
-The head is large and slightly wider than the body, shaped as a soft plump ROUNDED
-DOME: gently curved and narrower across the top, widening smoothly outward into full
-soft cheeks, ending in a broad softly rounded bottom. Every edge is one continuous
-curve. There are NO flat side walls, NO corners, NO straight jawline, and it must
-NOT read as a rounded cube, a rounded square, or a boxy shape.
+The head is large and slightly wider than the body. Seen from the front, the outline
+of the head is an OVAL — a wide egg shape resting with its broad end down, about
+1.05 times wider than it is tall. The entire outline is one single continuous curve,
+exactly like an egg or a balloon: every point along the edge is curving. The sides
+bulge outward into full round cheeks and the bottom is a wide arc.
+If you traced the head with one stroke it would be an ellipse, NOT a square with
+rounded corners.
 
 **Nose**
 The nose is one small rounded black oval clay piece, slightly off-centre and
 intentionally crooked. The nose is slightly tilted, and subtly uneven in shape.
 
 **Ears**
-The puppy has two long, floppy ears attached to the upper sides of the head. The ears
-are rounded and organically shaped, noticeably asymmetrical, with slightly different
-sizes, thicknesses, curves, and angles. Each ear should have its own naturally
-irregular handmade shape. They droop outward and downward. The ears are dark charcoal
-gray to nearly black.
+The puppy has two long, floppy, rounded ears attached to the upper sides of the head,
+drooping outward and downward. They are dark charcoal gray to nearly black.
+The two ears are ALMOST THE SAME SIZE — the size ratio between them is about
+**1 : 0.95**, a barely noticeable difference. They must clearly read as a matching
+pair. Only their curve and hanging angle differ a little, giving a gentle handmade
+feel — never a big or obvious size difference between the two ears.
 
 **Tail**
 A small dark charcoal-gray rounded tail is visible behind the character on the lower
@@ -91,6 +94,7 @@ The body wears NO clothing and NO accessories of any kind — completely plain a
 |---|---|---|---|
 | 1차 | (레퍼런스) | 기준 컷 | 스타일 원본 |
 | 2차 | GPT | ❌ 4개 항목 어긋남 | 아래 참조 |
+| 3차 | GPT | ❌ 질감·눈·얼굴 재발 + 귀 비대칭 과함 | 아래 참조 |
 
 - **2차 (2026-08-14, GPT) 실패 4건**
   1. 질감이 건조·거침 → `art-direction.md` B 블록 전면 수정 (그레인 어휘 제거 + RENDER INTENT 추가)
@@ -98,6 +102,19 @@ The body wears NO clothing and NO accessories of any kind — completely plain a
   3. 실사 점토 사진처럼 나옴 → 1번과 동일 원인. Negative의 `perfectly smooth clay texture` 제거
   4. 얼굴이 각짐 (`rounded-trapezoid`를 둥근 정사각형으로 해석) → 위 Head 블록을 ROUNDED DOME으로 교체
 - 1·2·3번은 **모든 캐릭터 공통 문제**라 `art-direction.md`에 반영했고, 4번만 찌부 개별 문제라 여기에 넣었다.
+
+- **3차 (2026-08-14, GPT) — 같은 문제 재발 + 신규 1건**
+  - 질감·눈·얼굴 3건이 그대로 재발. 서술을 강화했는데도 안 잡혔다.
+    → 원인은 문장이 아니라 **GPT가 Negative Prompt를 무시(역효과)한다는 점**이었다.
+      `art-direction.md` J 블록에 GPT 사용 금지 경고를 달고, GPT용 단축 골격을
+      `templates/character-design.md`에 신설했다.
+  - **부사가 아니라 숫자로 써야 한다**는 걸 확인했다. `noticeably`, `slightly`는
+    무시되고 기본값(완벽한 대칭·정원)으로 처리된다. → 눈 `1.4배 세로 타원`,
+    `1 : 0.92`, 얼굴 `1.05배 가로 타원`처럼 전부 수치화했다.
+  - 신규: **귀 크기 차이가 과했다.** 2차의 `noticeably asymmetrical`이 이번엔 과잉
+    반영됐다. → **1 : 0.95**로 못박고 "한 쌍으로 읽혀야 한다"를 명시.
+  - 교훈: 비대칭 지시는 **방향(크다/작다)이 아니라 비율**로 준다. 방향만 주면
+    무시되거나 과잉되거나 둘 중 하나다.
 
 ---
 
