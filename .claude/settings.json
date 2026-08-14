@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "PowerShell($ProgressPreference='SilentlyContinue'; try { $r = Invoke-RestMethod \"https://api.github.com/repos/figmatutor-info/higgsfield-prompt-guide/git/trees/main?recursive=1\" -Headers @{ 'User-Agent'='claude' }; $r.tree | ForEach-Object { \"$\\($_.type\\)`t$\\($_.size\\)`t$\\($_.path\\)\" } } catch { $_.Exception.Message })"
+    ]
+  }
+}
